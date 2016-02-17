@@ -73,6 +73,7 @@ api | `Object` | `{}` | This object is equipped with the methods for interacting
 create | `Boolean` or `Function` | | Allows users to type the label of their own options and push them into the list. You can pass a function that returns the full format of the option, using `input` as parameter, or set it to `true` to let Angular Selector create an object with the default properties given by `valueAttr` and `labelAttr`.
 change | `Function` | | Callback fired every time the selected values change. It provides two parameters: `newValue` and `oldValue`.
 remote | `Object` | <pre>{<br>  method: 'GET',<br>  cache: true,<br>  params: {}<br>}</pre> | Configuration object to pass to the native `$http` service ([docs](https://docs.angularjs.org/api/ng/service/$http#usage)).
+ngReadonly | `Boolean` or `Function` | `false` |  Disable / enable type ahead feature.
 remoteParam | `String` | `"q"` | Name of the query key in the remote parameter object. You should use this parameter to perform server-side filtering.
 removeButton | `Boolean` | `true` | Two-way bindable attribute to see the remove button (cross icon).
 viewItemTemplate | `String` | `"selector/item-default.html"` | Template URL of selected item(s).

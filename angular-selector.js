@@ -32,6 +32,7 @@ var Selector = (function ($filter, $timeout, $window, $http, $q) {
 			rtl:                   '=?',
 			api:                   '=?',
 			change:                '&?',
+			ngReadonly:            '=?',
 			remote:                '=?',
 			remoteParam:           '@?',
 			removeButton:          '=?',
@@ -474,7 +475,7 @@ module.exports = angular
 							'</div>' +
 						'</li>' +
 					'</ul>' +
-					'<input ng-model="search" placeholder="{{!hasValue() ? placeholder : \'\'}}" ng-disabled="disabled">' +
+					'<input ng-model="search" placeholder="{{!hasValue() ? placeholder : \'\'}}" ng-disabled="disabled" ng-readonly="ngReadonly">' +
 					'<div ng-if="!multiple || loading" class="selector-helper selector-global-helper" ng-click="!disabled && removeButton && unset()">' +
 						'<span class="selector-icon"></span>' +
 					'</div>' +
